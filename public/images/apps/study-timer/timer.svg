@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="'Segoe UI', Inter, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.75">
+      <stop offset="0" stop-color="#fdba74" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fdba74" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#glow)"/>
+
+  <g>
+    <rect x="200" y="100" width="880" height="540" rx="22" fill="#ffffff" opacity="0.98"/>
+    <rect x="200" y="100" width="880" height="54" rx="22" fill="#fff7ed"/>
+    <rect x="200" y="126" width="880" height="28" fill="#fff7ed"/>
+    <circle cx="228" cy="127" r="7" fill="#ff5f57"/>
+    <circle cx="250" cy="127" r="7" fill="#febc2e"/>
+    <circle cx="272" cy="127" r="7" fill="#28c840"/>
+    <rect x="560" y="116" width="170" height="22" rx="11" fill="#ffffff"/>
+    <text x="645" y="132" text-anchor="middle" font-size="12" fill="#9ca3af">studytimer.app/stats</text>
+
+    <rect x="200" y="154" width="76" height="486" fill="#fff7ed"/>
+    <rect x="218" y="178" width="40" height="40" rx="12" fill="#fed7aa" opacity="0.6"/>
+    <rect x="230" y="188" width="16" height="16" rx="4" fill="#f97316" opacity="0.7"/>
+    <rect x="218" y="234" width="40" height="40" rx="12" fill="#f97316"/>
+    <rect x="228" y="242" width="20" height="8" rx="4" fill="#ffffff"/>
+    <rect x="228" y="256" width="14" height="8" rx="4" fill="#ffffff"/>
+    <rect x="218" y="290" width="40" height="40" rx="12" fill="#fed7aa" opacity="0.6"/>
+    <circle cx="238" cy="310" r="7" fill="#f97316" opacity="0.7"/>
+
+    <g transform="translate(360, 190)">
+      <text font-size="16" font-weight="700" fill="#111827">Your study streak</text>
+      <text y="26" font-size="13" fill="#9ca3af">7 days and counting — keep it up!</text>
+
+      <rect x="0" y="60" width="420" height="120" rx="18" fill="#fff7ed"/>
+      <text x="40" y="120" font-size="56" font-weight="700" fill="#f97316">7</text>
+      <text x="40" y="152" font-size="14" font-weight="600" fill="#6b7280">days in a row</text>
+      <text x="200" y="120" font-size="40" font-weight="700" fill="#111827">28</text>
+      <text x="200" y="152" font-size="14" font-weight="600" fill="#6b7280">sessions this week</text>
+
+      <g transform="translate(0, 210)">
+        <text font-size="13" font-weight="600" fill="#111827">This week</text>
+        <g transform="translate(0, 18)">
+          <rect x="0" y="0" width="52" height="70" rx="12" fill="#f97316" opacity="0.25"/>
+          <rect x="0" y="22" width="52" height="48" rx="12" fill="#f97316"/>
+          <rect x="62" y="0" width="52" height="70" rx="12" fill="#f97316"/>
+          <rect x="124" y="0" width="52" height="70" rx="12" fill="#f97316"/>
+          <rect x="186" y="0" width="52" height="70" rx="12" fill="#f97316"/>
+          <rect x="248" y="0" width="52" height="70" rx="12" fill="#f97316"/>
+          <rect x="310" y="0" width="52" height="70" rx="12" fill="#f97316"/>
+          <rect x="372" y="0" width="52" height="70" rx="12" fill="#fdba74"/>
+        </g>
+        <g font-size="11" fill="#9ca3af" text-anchor="middle">
+          <text x="26" y="100">M</text>
+          <text x="88" y="100">T</text>
+          <text x="150" y="100">W</text>
+          <text x="212" y="100">T</text>
+          <text x="274" y="100">F</text>
+          <text x="336" y="100">S</text>
+          <text x="398" y="100">S</text>
+        </g>
+      </g>
+
+      <g transform="translate(460, 60)">
+        <text font-size="13" font-weight="600" fill="#111827">Recent sessions</text>
+        <rect y="16" width="260" height="52" rx="14" fill="#fff7ed"/>
+        <text x="20" y="48" font-size="13" font-weight="600" fill="#111827">Focus · 25 min</text>
+        <rect x="190" y="28" width="48" height="24" rx="12" fill="#d1fae5"/>
+        <text x="214" y="45" text-anchor="middle" font-size="12" fill="#059669">Done</text>
+        <rect y="78" width="260" height="52" rx="14" fill="#fff7ed"/>
+        <text x="20" y="110" font-size="13" font-weight="600" fill="#111827">Focus · 25 min</text>
+        <rect x="190" y="90" width="48" height="24" rx="12" fill="#d1fae5"/>
+        <text x="214" y="107" text-anchor="middle" font-size="12" fill="#059669">Done</text>
+      </g>
+    </g>
+  </g>
+</svg>
