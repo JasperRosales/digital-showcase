@@ -1,0 +1,56 @@
+{
+  "apps": [
+    {
+      "slug": "study-timer",
+      "name": "Study Timer",
+      "tagline": "Pomodoro timer that keeps you focused during long study sessions.",
+      "description": "A simple Pomodoro timer with configurable focus and break intervals, plus a running streak counter.",
+      "purpose": "To help students build a daily study habit and stop procrastinating by breaking work into small sessions.",
+      "target": "Students who struggle to focus while studying at home.",
+      "howItWorks": "Pick focus and break lengths, hit start, and the timer cycles automatically. Sessions completed today are counted and streaks are saved locally.",
+      "icon": "/images/apps/study-timer/icon.svg",
+      "screenshots": [
+        "/images/apps/study-timer/home.svg",
+        "/images/apps/study-timer/timer.svg"
+      ],
+      "github": "https://github.com/cicsbalayan/digital-showcase-web",
+      "author": "Juan Dela Cruz",
+      "status": "approved",
+      "createdAt": "2026-07-26"
+    },
+    {
+      "slug": "campus-events",
+      "name": "Campus Events",
+      "tagline": "One place for every org event, club meeting, and school deadline.",
+      "description": "A weekly calendar of on-campus events pulled together from org pages and bulletin boards.",
+      "purpose": "To stop students from missing events because announcements are scattered across different pages and groups.",
+      "target": "Students and org officers who need a single view of the school calendar.",
+      "howItWorks": "Events are added by org officers, tagged by category, and shown in a week-by-week calendar with a one-tap 'Add to calendar' action.",
+      "icon": "/images/apps/campus-events/icon.svg",
+      "screenshots": [
+        "/images/apps/campus-events/home.svg",
+        "/images/apps/campus-events/calendar.svg"
+      ],
+      "author": "Maria Santos",
+      "status": "approved",
+      "createdAt": "2026-07-30"
+    },
+    {
+      "slug": "grade-saver",
+      "name": "Grade Saver",
+      "tagline": "Estimate the grade you need to pass before the next exam.",
+      "description": "Enter your current scores and the upcoming exam weight to see exactly what you need to hit a passing grade.",
+      "purpose": "To remove the guesswork around finals week and help students plan their review time.",
+      "target": "Students in their last weeks of a semester.",
+      "howItWorks": "You log each graded item and its weight. The app computes your running average and works backwards to tell you the minimum score required to pass.",
+      "icon": "/images/apps/grade-saver/icon.svg",
+      "screenshots": [
+        "/images/apps/grade-saver/home.svg",
+        "/images/apps/grade-saver/grades.svg"
+      ],
+      "author": "Carlos Reyes",
+      "status": "approved",
+      "createdAt": "2026-08-02"
+    }
+  ]
+}
