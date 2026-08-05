@@ -1,8 +1,24 @@
+import { Suspense } from "react"
+import dynamic from "next/dynamic"
+
 import { Navbar } from "@/components/navbar"
-import { AboutSection } from "@/components/sections/about"
-import { ContributeSection } from "@/components/sections/contribute"
 import { Hero } from "@/components/sections/hero"
-import { SiteFooter } from "@/components/site-footer"
+
+const AboutSection = dynamic(() =>
+  import("@/components/sections/about").then((module) => module.AboutSection)
+)
+
+const ContributeSection = dynamic(() =>
+  import("@/components/sections/contribute").then((module) => module.ContributeSection)
+)
+
+const SiteFooter = dynamic(() =>
+  import("@/components/site-footer").then((module) => module.SiteFooter)
+)
+
+function SectionFallback() {
+  return <div className="h-64" />
+}
 
 export default function Page() {
   return (
@@ -10,10 +26,16 @@ export default function Page() {
       <Navbar />
       <main>
         <Hero />
-        <AboutSection />
-        <ContributeSection />
+        <Suspense fallback={<SectionFallback />}>
+          <AboutSection />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <ContributeSection />
+        </Suspense>
       </main>
-      <SiteFooter />
+      <Suspense fallback={<SectionFallback />}>
+        <SiteFooter />
+      </Suspense>
     </>
   )
 }

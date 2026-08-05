@@ -1,56 +1,117 @@
 {
   "apps": [
     {
-      "slug": "study-timer",
-      "name": "Study Timer",
-      "tagline": "Pomodoro timer that keeps you focused during long study sessions.",
-      "description": "A simple Pomodoro timer with configurable focus and break intervals, plus a running streak counter.",
-      "purpose": "To help students build a daily study habit and stop procrastinating by breaking work into small sessions.",
-      "target": "Students who struggle to focus while studying at home.",
-      "howItWorks": "Pick focus and break lengths, hit start, and the timer cycles automatically. Sessions completed today are counted and streaks are saved locally.",
-      "icon": "/images/apps/study-timer/icon.svg",
+      "slug": "resume-analyzer",
+      "name": "Resume Analyzer",
+      "tagline": "AI-powered resume analysis with ATS scoring and actionable feedback.",
+      "description": "Analyze resumes against job descriptions using AI to identify ATS compatibility, missing skills, and tailored recommendations for improvement.",
+      "purpose": "To help job seekers optimize their resumes before applying for internships and full-time positions.",
+      "target": "Students, fresh graduates, and professionals preparing job applications.",
+      "howItWorks": "Upload or paste a resume together with a job description. The AI evaluates the resume, highlights strengths and weaknesses, provides an ATS score, and suggests improvements.",
+      "icon": "/images/apps/resume-analyzer/resume-analyzer.ico",
+      "url": "https://resume-analyzer-beta-seven.vercel.app/",
       "screenshots": [
-        "/images/apps/study-timer/home.svg",
-        "/images/apps/study-timer/timer.svg"
+        "/images/apps/resume-analyzer/1.png",
+        "/images/apps/resume-analyzer/2.png",
+        "/images/apps/resume-analyzer/3.png",
+        "/images/apps/resume-analyzer/4.png"
       ],
-      "github": "https://github.com/cicsbalayan/digital-showcase-web",
-      "author": "Juan Dela Cruz",
+      "github": "https://github.com/JasperRosales/resume_analyzer",
+      "author": "Jasper Rosales",
       "status": "approved",
-      "createdAt": "2026-07-26"
+      "createdAt": "2026-08-05"
     },
     {
-      "slug": "campus-events",
-      "name": "Campus Events",
-      "tagline": "One place for every org event, club meeting, and school deadline.",
-      "description": "A weekly calendar of on-campus events pulled together from org pages and bulletin boards.",
-      "purpose": "To stop students from missing events because announcements are scattered across different pages and groups.",
-      "target": "Students and org officers who need a single view of the school calendar.",
-      "howItWorks": "Events are added by org officers, tagged by category, and shown in a week-by-week calendar with a one-tap 'Add to calendar' action.",
-      "icon": "/images/apps/campus-events/icon.svg",
+      "slug": "cv-builder",
+      "name": "CV Builder",
+      "tagline": "Build ATS-friendly resumes with live editing and PDF export.",
+      "description": "A modern CV builder featuring drag-and-drop sections, real-time preview, customizable templates, and PDF export—all without requiring an account.",
+      "purpose": "To simplify professional resume creation while ensuring ATS compatibility.",
+      "target": "Students, job seekers, and professionals updating their resumes.",
+      "howItWorks": "Fill in your information, rearrange resume sections, preview changes instantly, and export your CV as a professionally formatted PDF.",
+      "icon": "/images/apps/cv-builder/cv-builder.ico",
+      "url": "https://cv-builder-six-eta.vercel.app",
       "screenshots": [
-        "/images/apps/campus-events/home.svg",
-        "/images/apps/campus-events/calendar.svg"
+        "/images/apps/cv-builder/1.png",
+        "/images/apps/cv-builder/2.png",
+        "/images/apps/cv-builder/3.png",
+        "/images/apps/cv-builder/4.png",
+        "/images/apps/cv-builder/5.png"
       ],
-      "author": "Maria Santos",
+      "github": "https://github.com/JasperRosales/cv_builder",
+      "author": "Jasper Rosales",
       "status": "approved",
-      "createdAt": "2026-07-30"
+      "createdAt": "2026-08-05"
     },
     {
-      "slug": "grade-saver",
-      "name": "Grade Saver",
-      "tagline": "Estimate the grade you need to pass before the next exam.",
-      "description": "Enter your current scores and the upcoming exam weight to see exactly what you need to hit a passing grade.",
-      "purpose": "To remove the guesswork around finals week and help students plan their review time.",
-      "target": "Students in their last weeks of a semester.",
-      "howItWorks": "You log each graded item and its weight. The app computes your running average and works backwards to tell you the minimum score required to pass.",
-      "icon": "/images/apps/grade-saver/icon.svg",
+      "slug": "invoice-generator",
+      "name": "Invoice Generator",
+      "tagline": "Create, manage, and export professional invoices effortlessly.",
+      "description": "A secure invoice management platform built with Next.js that enables freelancers and businesses to generate printable invoices with PDF export.",
+      "purpose": "To provide a simple yet professional solution for invoice creation and management.",
+      "target": "Freelancers, agencies, and small businesses.",
+      "howItWorks": "Enter client and invoice details, customize items and pricing, preview the invoice, and export it as a high-quality PDF.",
+      "icon": "/images/apps/invoice-generator/invoice-generator.ico",
+      "url": "https://invoice-generator-three-nu.vercel.app/",
       "screenshots": [
-        "/images/apps/grade-saver/home.svg",
-        "/images/apps/grade-saver/grades.svg"
+        "/images/apps/invoice-generator/1.png",
+        "/images/apps/invoice-generator/2.png",
+        "/images/apps/invoice-generator/3.png",
+        "/images/apps/invoice-generator/4.png",
+        "/images/apps/invoice-generator/5.png",
+        "/images/apps/invoice-generator/6.png",
+        "/images/apps/invoice-generator/7.png"
       ],
-      "author": "Carlos Reyes",
+      "github": "https://github.com/JasperRosales/invoice-generator",
+      "author": "Jasper Rosales",
       "status": "approved",
-      "createdAt": "2026-08-02"
+      "createdAt": "2026-08-05"
+    },
+    {
+      "slug": "portfolio-x",
+      "name": "Portfolio X",
+      "tagline": "A technical portfolio showcasing software engineering expertise.",
+      "description": "A personal portfolio highlighting projects, skills, achievements, and technical experience with a modern responsive interface.",
+      "purpose": "To serve as a professional portfolio for employers and collaborators.",
+      "target": "Recruiters, clients, and fellow developers.",
+      "howItWorks": "Browse featured projects, technical skills, certifications, and contact information in a responsive portfolio.",
+      "icon": "/images/apps/portfolio-x/portfolio-x.ico",
+      "url": "https://portfolio-x-asper.vercel.app",
+      "screenshots": [
+        "/images/apps/portfolio-x/1.png",
+        "/images/apps/portfolio-x/2.png",
+        "/images/apps/portfolio-x/3.png",
+        "/images/apps/portfolio-x/4.png",
+        "/images/apps/portfolio-x/5.png",
+        "/images/apps/portfolio-x/6.png",
+        "/images/apps/portfolio-x/7.png"
+      ],
+      "github": "https://github.com/JasperRosales/portfolio-x",
+      "author": "Jasper Rosales",
+      "status": "approved",
+      "createdAt": "2026-08-05"
+    },
+    {
+      "slug": "digital-showcase",
+      "name": "Digital Showcase",
+      "tagline": "A centralized platform for showcasing achievements and announcements.",
+      "description": "A digital showcase for displaying organizational achievements, projects, and announcements in a clean and accessible interface.",
+      "purpose": "To highlight accomplishments and important updates for organizations and students.",
+      "target": "Student organizations and educational institutions.",
+      "howItWorks": "Browse categorized achievements, announcements, and featured projects from different organizations.",
+      "icon": "/images/apps/digital-showcase/digital-showcase.ico",
+      "url": "https://digital-showcase-web.vercel.app",
+      "screenshots": [
+        "/images/apps/digital-showcase/1.png",
+        "/images/apps/digital-showcase/2.png",
+        "/images/apps/digital-showcase/3.png",
+        "/images/apps/digital-showcase/4.png",
+        "/images/apps/digital-showcase/5.png"
+      ],
+      "github": "https://github.com/JasperRosales/digital-showcase",
+      "author": "Jasper Rosales",
+      "status": "approved",
+      "createdAt": "2026-08-05"
     }
   ]
 }

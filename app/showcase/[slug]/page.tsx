@@ -1,16 +1,26 @@
+import { Suspense } from "react"
 import type { Metadata } from "next"
+import dynamic from "next/dynamic"
 import Link from "next/link"
 import Image from "next/image"
 import { notFound } from "next/navigation"
-import { ArrowLeft, ExternalLink, Info, ListChecks, Target, Users } from "lucide-react"
+import { ArrowLeft, ExternalLink, Globe, Info, ListChecks, Target, Users } from "lucide-react"
 
 import { GithubIcon } from "@/components/github-icon"
 import { Navbar } from "@/components/navbar"
+import { ScreenshotLightbox } from "@/components/screenshot-lightbox"
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card"
 import { buttonVariants } from "@/components/ui/button"
-import { SiteFooter } from "@/components/site-footer"
 import { cn } from "@/lib/utils"
 import { apps, getAppBySlug } from "@/lib/apps"
+
+const SiteFooter = dynamic(() =>
+  import("@/components/site-footer").then((module) => module.SiteFooter)
+)
+
+function FooterFallback() {
+  return <div className="h-24" />
+}
 
 export function generateStaticParams() {
   return apps.map((app) => ({ slug: app.slug }))
@@ -81,6 +91,7 @@ export default async function AppDetailPage({
               width={64}
               height={64}
               unoptimized
+              loading="lazy"
               className="size-16 shrink-0 rounded-2xl shadow-md"
             />
             <div>
@@ -94,18 +105,31 @@ export default async function AppDetailPage({
             </div>
           </div>
 
-          {app.github ? (
-            <a
-              href={app.github}
-              target="_blank"
-              rel="noreferrer"
-              className={cn(buttonVariants({ variant: "outline" }), "shrink-0")}
-            >
-              <GithubIcon />
-              Source
-              <ExternalLink />
-            </a>
-          ) : null}
+          <div className="flex shrink-0 items-center gap-2">
+            {app.url ? (
+              <a
+                href={app.url}
+                target="_blank"
+                rel="noreferrer"
+                className={cn(buttonVariants(), "rounded-full")}
+              >
+                <Globe />
+                Open app
+              </a>
+            ) : null}
+            {app.github ? (
+              <a
+                href={app.github}
+                target="_blank"
+                rel="noreferrer"
+                className={cn(buttonVariants({ variant: "outline" }), "rounded-full")}
+              >
+                <GithubIcon />
+                Source
+                <ExternalLink />
+              </a>
+            ) : null}
+          </div>
         </header>
 
         <section className="mt-12">
@@ -145,27 +169,13 @@ export default async function AppDetailPage({
         {app.screenshots.length > 0 ? (
           <section className="mt-16">
             <h2 className="font-heading text-2xl font-semibold tracking-tight">Screenshots</h2>
-            <div className="mt-6 grid gap-5 sm:grid-cols-2">
-              {app.screenshots.map((screenshot) => (
-                <div
-                  key={screenshot}
-                  className="overflow-hidden rounded-2xl border border-border bg-muted/40"
-                >
-                  <Image
-                    src={screenshot}
-                    alt={`Screenshot of ${app.name}`}
-                    width={1280}
-                    height={720}
-                    unoptimized
-                    className="aspect-video w-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+            <ScreenshotLightbox screenshots={app.screenshots} name={app.name} />
           </section>
         ) : null}
       </main>
-      <SiteFooter />
+      <Suspense fallback={<FooterFallback />}>
+        <SiteFooter />
+      </Suspense>
     </>
   )
 }

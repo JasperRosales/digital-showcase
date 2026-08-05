@@ -11,6 +11,7 @@ export type App = {
   target: string
   howItWorks: string
   icon: string
+  url: string
   screenshots: string[]
   github?: string
   author: string

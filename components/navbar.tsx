@@ -5,7 +5,6 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 
 import { GithubIcon } from "@/components/github-icon"
-import { ThemeToggle } from "@/components/theme-toggle"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { REPO_URL, SITE_NAME } from "@/lib/constants"
@@ -53,7 +52,6 @@ export function Navbar() {
             <GithubIcon />
             GitHub
           </a>
-          <ThemeToggle />
           <button
             type="button"
             aria-label="Toggle menu"
